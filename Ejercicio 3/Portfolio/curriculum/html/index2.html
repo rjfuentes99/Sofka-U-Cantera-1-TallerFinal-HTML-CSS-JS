@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Experiencia laboral</title>
+</head>
+<body>
+    <section class="principal">
+
+         <nav class="container-nav" id="containernav">
+
+            <div class="margen-imagen">
+                <img src="../imagenes/perfil.jpg" width="100px" height="100px" alt="" class="imagen">
+            </div>
+
+            <div class="margen-botones">
+                <button><a href="../html/index.html" class="boton" >Inicio</a></button>
+                <button><a href="../html/index2.html" class="boton">Experiencia</a></button>
+                <button><a href="../html/index3.html" class="boton">Referencias Personales</a></button>
+                <button><a href="../html/index5.html" class="boton">Referencias Familiares</a></button>
+                <button><a href="../html/index4.html" class="boton">Estudios</a></button>
+            </div>  
+            <label for="">Colores</label>
+            <select onchange=cambiarColores(this) class="selectColor" id="selectColor">
+                <option value="1" ><a href="" >Predeterminado</a></option>
+                <option value="2" ><a href="" >Purple black</a></option>
+                <option value="3"><a href="" >Red grey</a></option>
+                <option value="4"><a href="" >Yellow blue</a></option>
+            </select>
+        
+        </nav>
+            <div class="container-info" id="containerinfo">
+                <h1>Experiencia Laboral</h1>
+                <div class="informacion">
+                   
+                    <div class="acordeon">Experiencia General</div>
+                        <div class="panel" id="panel">
+                            <p>Cajero polifuncional 2016-2017 Pasteleria Chapiscake</p>
+                            <p>Cocinero polifuncional 2018-2019 Restaurante Lematchet</p>
+                        </div>
+                    <div class="acordeon">Experiencia en Sofware</div>
+                        <div class="panel" id="panel2">
+                            <p>Maquetador web 2019-2020 Microsoft</p>
+                            <p>Front-end developer 2020-2021 Amazon</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

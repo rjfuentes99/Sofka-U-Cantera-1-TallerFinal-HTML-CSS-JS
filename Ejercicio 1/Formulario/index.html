@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+            <form action="" class="container-formulario">
+                <div class="formulario">
+                    <div class="container-titulo">
+                        <h1>Contactanos</h1>
+                    </div>
+                   <div class="formulario_group">
+                        <input type="text" placeholder=" " class="formulario_input" required id="name">
+                        <label for="name" class="formulario_label"> Nombre</label>
+                        <span class="formulario_line"></span>
+                    </div>
+                    <div class="formulario_group">
+                        <input type="email" placeholder=" " class="formulario_input" required id="mail">
+                        <label for="name" class="formulario_label"> Email</label>
+                        <span class="formulario_line"></span>
+                    </div>
+                    <div class="formulario_group">
+                        <input type="text" placeholder=" " class="formulario_input" required id="about">
+                        <label for="name" class="formulario_label">Asunto del mensaje</label>
+                        <span class="formulario_line"></span>
+                    </div>
+                    <div class="formulario_group">
+                        <input type="textarea" placeholder=" " class="formulario_input" required id="text">
+                        <label for="name" class="formulario_label">Mensaje</label>
+                        <span class="formulario_line"></span>
+                    </div>
+                   <div class="container_botones">
+                    <input type="submit" class="botones" onclick="return enviarFormulario()">
+                    <input type="reset" class="botones">
+                   </div>
+                </div>
+               </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

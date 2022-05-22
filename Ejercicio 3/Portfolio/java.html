@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Portfolio/css/style.css">
+        <link rel="stylesheet" href="../Portfolio/css/proyectos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+        <title>Talleres Java</title>
+    </head> 
+    <body>
+        <header>
+            <nav id="navbar" class="nav-main">
+                <a href="#" class="enlace">
+                    <p>Ricardo Fuentes</p>
+                </a>
+                <input type="checkbox" id="check" class="boton-nav" id>
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="navbar">
+                    <li><a href="../Portfolio/index.html" target="_blank">Start</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="titulo">
+            <h1>Talleres de Java</h1>
+        </div>
+        <div class="container-info" id="containerinfo">
+             
+            <div class="acordeon">Variables</div>
+                <div class="panel" id="panel">
+                        <div class="acordeon">Ejercicio 1</div>
+                            <div class="panel" id="panel">
+                                <h4>Realizar un programa el cual solicite su nombre y apellidos en Java</h4>
+                                <pre>
+                                <code>
+                                    import java.util.Scanner;
+                                    public class Ejercicio1 {
+                                        private static String nombre1 = " ";
+                                        private static String apellido1 = " ";
+                                        public static void main(String[] args){
+                                            Scanner String = new Scanner(System.in);
+                                            System.out.println("Cual es tu nombre?");
+                                            nombre1 = String.nextLine();
+                                            System.out.println("Cual es tu apellido?");
+                                            apellido1 = String.nextLine();
+                                            System.out.println("Cual es tu apellido?");
+                                        }
+                                    } 
+                                </code>
+                                </pre>
+                                <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%201%20Variables/Ejercicio1/src/Ejercicio1.java" target="_blank">Github</a></button>
+                        </div>
+                        <div class="acordeon">Ejercicio 2</div>
+                            <div class="panel" id="panel">
+                                <h4>Realizar un programa el cual solicite su nombre, apellidos, edad y estatura en Java</h4>
+                                <pre>
+                                <code>import java.util.Scanner;
+                                    public class EjercicioDos {
+                                        private static String nombre1;
+                                        private static String apellido1;
+                                        private static int edad1;
+                                        private static Double altura1;
+                                        public static void main(String[] args){
+                                            Scanner String = new Scanner(System.in);
+                                            Scanner input = new Scanner(System.in);
+                                            System.out.println("Cual es tu nombre?");
+                                            nombre1 = String.nextLine();
+                                            System.out.println("Cual es tu apellido?");
+                                            apellido1 = String.nextLine();
+                                            System.out.println("Cual es tu altura?");
+                                            altura1 = input.nextDouble();
+                                            System.out.println("Que edad tienes?");
+                                            edad1 = input.nextInt();
+                                        }
+                                    }
+                                </code>   
+                                </pre>
+                                <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%201%20Variables/Ejercicio2/src/EjercicioDos.java" target="_blank">Github</a></button>
+
+                        </div>
+                        <div class="acordeon">Ejercicio 3</div>
+                            <div class="panel" id="panel">
+                                <h4>Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre] en Java</h4>
+                                <pre>
+                                <code>import java.util.Scanner;
+                                    public class EjercicioTres {
+                                        private static String nombreCompleto;
+                                        private static String nombreMama;
+                                        private static String nombrePapa;
+                                        public static void main(String[] args){
+                                            Scanner String = new Scanner(System.in);
+                                            Scanner input = new Scanner(System.in);
+                                            System.out.println("Cual es tu nombre completo?");
+                                            nombreCompleto = String.nextLine();
+                                            System.out.println("Cual es el nombre de tu mama?");
+                                            nombreMama = String.nextLine();
+                                            System.out.println("Cual es el nombre de tu papa");
+                                            nombrePapa = String.nextLine();
+                                            System.out.println("Yo "+nombreCompleto+" Soy hijo de "+nombreMama+" y "+ nombrePapa);
+                                    
+                                        }
+                                    }
+                                </code>   
+                                </pre>
+                                <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%201%20Variables/Ejercicio3/src/EjercicioTres.java" target="_blank">Github</a></button>
+                        </div>
+                        <div class="acordeon">Ejercicio 4</div>
+                            <div class="panel" id="panel">
+                                <h4>Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País] en Java</h4>
+                                <pre>
+                                <code>import java.util.Scanner;
+                                    public class EjercicioCuatro {
+                                        private static String pais;
+                                        private static String capital;
+                                        public static void main(String[] args){
+                                            Scanner String = new Scanner(System.in);
+                                            System.out.println("En que pais vive?");
+                                            pais = String.nextLine();
+                                            System.out.println("Cual es la ciudad capital del pais donde vive?");
+                                            capital = String.nextLine();
+                                            System.out.println("La ciudad "+capital+" Es la capital de "+pais);
+                                        }
+                                    }
+                               </code>   
+                                </pre>
+                                <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%201%20Variables/Ejercicio4/src/EjercicioCuatro.java" target="_blank">Github</a></button>
+                        </div>
+                        <div class="acordeon">Ejercicio 5</div>
+                            <div class="panel" id="panel">
+                                <h4>Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a) en Java</h4>
+                                <pre>
+                                <code>import java.util.Scanner;
+                                    public class EjercicioCinco {
+                                        private static String nombreDueño;
+                                        private static String nombreMascota;
+                                        private static int edadMascota;
+                                        private static String tipoMascota;
+                                        public static void main(String[] args){
+                                            Scanner String = new Scanner(System.in);
+                                            Scanner input = new Scanner(System.in);
+                                            System.out.println("Cual es tu nombre?");
+                                            nombreDueño = String.nextLine();
+                                            System.out.println("Cual es el nombre de tu mascota?");
+                                            nombreMascota = String.nextLine();
+                                            System.out.println("Cual es la edad de tu mascota?");
+                                            edadMascota = input.nextInt();
+                                            System.out.println("Que tipo de animal es tu mascota?");
+                                            tipoMascota = String.nextLine();
+                                            System.out.println(nombreMascota+" Es un(a) "+tipoMascota+" ,el cual, tiene, "+edadMascota+" años de edad y "+nombreDueño+" Es actualmente su dueño");
+                                        }
+                                    }
+
+                                </code>   
+                                </pre>
+                                <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%201%20Variables/Ejercicio5/src/EjercicioCinco.java" target="_blank">Github</a></button>
+                        </div>
+                </div>
+            <div class="acordeon">Condicionales</div>
+                <div class="panel" id="panel">
+                <div class="acordeon">Ejercicio 1</div>
+                    <div class="panel" id="panel">
+                        <h4>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioUno {
+                            
+                                public static int edad;
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    edad = capturarDatosDelUsuario();
+                                    evaluarDatosDelUsuario(edad);
+                                }
+                            
+                                public static int capturarDatosDelUsuario(){
+                                    System.out.println("Cual es tu edad?");
+                                    return input.nextInt();
+                                }
+                            
+                                public  static void evaluarDatosDelUsuario(int edad){
+                                    if (edad >= 18){
+                                        System.out.println("Usted es mayor de edad");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio1/src/EjercicioUno.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 2</div>
+                    <div class="panel" id="panel">
+                        <h4>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a) En Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioDos {
+                            
+                                public static int edad;
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    edad = capturarDatosDelUsuario();
+                                    evaluarDatosDelUsuario(edad);
+                                }
+                            
+                                public static int capturarDatosDelUsuario(){
+                                    System.out.println("Cual es tu edad?");
+                                    return input.nextInt();
+                                }
+                            
+                                public  static void evaluarDatosDelUsuario(int edad){
+                                    if (edad < 18){
+                                        System.out.println("Usted es menor de edad");
+                                    }
+                                }
+                            }
+
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio2/src/EjercicioDos.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 3</div>
+                    <div class="panel" id="panel">
+                        <h4>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioTres {
+                            
+                                public static int edad;
+                                public static String nombreCompleto;
+                                public static Scanner input = new Scanner(System.in);
+                                public static Scanner String = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    nombreCompleto = capturarDatosDelUsuario1();
+                                    edad = capturarDatosDelUsuario2();
+                                    evaluarDatosDelUsuario(edad);
+                                }
+                            
+                                public static String capturarDatosDelUsuario1(){
+                                    System.out.println("Cual es tu nombre?");
+                                    return String.nextLine();
+                                }
+                            
+                                public static int capturarDatosDelUsuario2(){
+                                    System.out.println("Que edad tienes?");
+                                    return input.nextInt();
+                                }
+                            
+                                public static void evaluarDatosDelUsuario(int edad){
+                                    if (edad >= 18) {
+                                        System.out.println(nombreCompleto + " usted es mayor de edad, por lo tanto puede entrar a la fiesta");
+                                    }else{
+                                        System.out.println(nombreCompleto+" usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.");
+                                    }
+                                }
+                            }
+
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio3/src/EjercicioTres.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 4</div>
+                    <div class="panel" id="panel">
+                        <h4>La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película en JaVA</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioCuatro {
+                            
+                                public static String nombreRetiro;
+                                public static String direccion;
+                                public static String nombrePelicula;
+                                public static String informePelicula;
+                                public static int opcion,opcion2,opcion3,opcion4;
+                                public static Scanner String = new Scanner(System.in);
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    opcion = opcionMenuPrincipal();
+                                    evaluarMenuPrincipal(opcion);
+                                }
+                            
+                                public static int opcionMenuPrincipal(){
+                                    System.out.println("Bienvenido a la tienda de peliculas virtual");
+                                    System.out.println("===========================================");
+                                    System.out.println("1. Peliculas Disponibles");
+                                    System.out.println("2. Alquilar Peliculas");
+                                    System.out.println("3. Devolver Pelicula");
+                                    return input.nextInt();
+                                }
+                            
+                                public static void evaluarMenuPrincipal(int opcion){
+                                    switch (opcion){
+                            
+                                        case 1:
+                                            System.out.println("Pelicula 1");
+                                            System.out.println("Pelicula 2");
+                                            System.out.println("Pelicula 3");
+                                            break;
+                                        case 2:
+                                            System.out.println("Que pelicula desea alquilar?");
+                                            System.out.println("1.Pelicula 1");
+                                            System.out.println("2.Pelicula 2");
+                                            System.out.println("3.Pelicula 3");
+                                            System.out.println("Coloque el numero de la pelicula");
+                                            opcion2 = input.nextInt();
+                                            System.out.println("Como quieres que sea el retiro");
+                                            System.out.println("1. Retirar en el local");
+                                            System.out.println("2. Enviar a una direccion");
+                                            opcion3 = input.nextInt();
+                                            switch (opcion3){
+                                                case 1:
+                                                    System.out.println("Ingrese un nombre para retirar el pedido");
+                                                    nombreRetiro = String.nextLine();
+                                                    System.out.println("Su pedido esta listo para retirar bajo el nombre de "+nombreRetiro);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Ingrese la direccion para el envio");
+                                                    direccion = String.nextLine();
+                                                    System.out.println("El pedido sera enviado a esta direccion "+direccion);
+                                                    break;
+                                            }
+                                            break;
+                                        case 3:
+                                            System.out.println("Ingrese el nombre de la pelicula que desea devolver");
+                                            nombrePelicula = String.nextLine();
+                                            System.out.println("La pelicula "+nombrePelicula+" Tuvo algun daño o novedad");
+                                            System.out.println("1. Informar sobre daño o novedad");
+                                            System.out.println("2. No hay nada que informar");
+                                            opcion4 = input.nextInt();
+                                            switch (opcion4){
+                                                case 1:
+                                                    System.out.println("Cual es el daño o novedad presentada?");
+                                                    informePelicula = String.nextLine();
+                                                    System.out.println("Muchas gracias por la informacion brindada, tendremos mas cuidado la proxima vez");
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Esperamos que hayas disfrutado la pelicula");
+                                                    break;
+                                            }
+                                            break;
+                                    }
+                                }
+                            }
+
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio4/src/EjercicioCuatro.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 5</div>
+                    <div class="panel" id="panel">
+                        <h4>La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioCinco {
+                            
+                                public static String articuloDevolver, numeroPastillas,numeroBlisters;
+                                public static int opcion,opcion2,opcion3;
+                                public static Scanner String = new Scanner(System.in);
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    opcion = opcionMenuPrincipal();
+                                    evaluarOpcionPrincipal(opcion);
+                                }
+                            
+                                public static int opcionMenuPrincipal(){
+                            
+                                    System.out.println("Bienvenido a la farmacia virtual");
+                                    System.out.println("===========================================");
+                                    System.out.println("1. Comprar producto");
+                                    System.out.println("2. Devoluciones");
+                                    return input.nextInt();
+                            
+                                }
+                            
+                                public static void evaluarOpcionPrincipal(int opcion){
+                                    switch (opcion){
+                                        case 1:
+                                            System.out.println("Seleccione el producto que quiera comprar");
+                                            System.out.println("1. Paracetamol de 400mg");
+                                            System.out.println("2. Paracetamol de 600mg");
+                                            System.out.println("3. Paracetamol de 800mg");
+                                            System.out.println("Consultar precios de:");
+                                            opcion2 = input.nextInt();
+                                            switch (opcion2) {
+                                                case 1:
+                                                    System.out.println("Precios");
+                                                    System.out.println("1. La pildora cuesta 10 centavos");
+                                                    System.out.println("2. El blister cuesta 2 dolares");
+                                                    opcion3 = input.nextInt();
+                                                    switch (opcion3){
+                                                        case 1:
+                                                            System.out.println("Cuantas pildoras quieres comprar?");
+                                                            numeroPastillas = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                        case 2:
+                                                            System.out.println("Cuantos blisters quieres comprar?");
+                                                            numeroBlisters = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                    }
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Precios");
+                                                    System.out.println("1. La pildora cuesta 15 centavos");
+                                                    System.out.println("2. El blister cuesta 2.5 dolares");
+                                                    opcion3 = input.nextInt();
+                                                    switch (opcion3){
+                                                        case 1:
+                                                            System.out.println("Cuantas pildoras quieres comprar?");
+                                                            numeroPastillas = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                        case 2:
+                                                            System.out.println("Cuantos blisters quieres comprar?");
+                                                            numeroBlisters = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                    }
+                                                    break;
+                                                case 3:
+                                                    System.out.println("Precios");
+                                                    System.out.println("1. La pildora cuesta 20 centavos");
+                                                    System.out.println("2. El blister cuesta 3 dolares");
+                                                    opcion3 = input.nextInt();
+                                                    switch (opcion3){
+                                                        case 1:
+                                                            System.out.println("Cuantas pildoras quieres comprar?");
+                                                            numeroPastillas = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                        case 2:
+                                                            System.out.println("Cuantos blisters quieres comprar?");
+                                                            numeroBlisters = String.nextLine();
+                                                            System.out.println("Tu pedido esta listo para recojer");
+                                                            break;
+                                                    }
+                                                    break;
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Que articulo quiere devolver");
+                                            articuloDevolver = String.next();
+                                            System.out.println("Acerquese a la farmacia con el "+articuloDevolver);
+                                            break;
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio5/src/EjercicioCinco.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 6</div>
+                <div class="panel" id="panel">
+                        <h4>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioSeis {
+                            
+                                public static String ingresoMoto, observacionesMoto, nombreVehiculo, arreglosmoto, nuevasPiezas;
+                                public static int opcion, opcion2,opcion3;
+                                public static Scanner String = new Scanner(System.in);
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args){
+                            
+                                    opcion = opcionMenuPrincipal();
+                                    evaluarOpcionMenuPrincipal(opcion);
+                            
+                                }
+                            
+                                public static int opcionMenuPrincipal(){
+                            
+                                    System.out.println("Bienvenido(a)s al taller de motos El maquinista") ;
+                                    System.out.println("1. Ingresar moto al sistema") ;
+                                    System.out.println("2. Retirar moto del sistema") ;
+                                    return input.nextInt();
+                            
+                                }
+                            
+                                public static void evaluarOpcionMenuPrincipal(int opcion){
+                            
+                                    switch (opcion){
+                                        case 1:
+                                            System.out.println("Ingrese el tipo de la moto");
+                                            ingresoMoto = String.nextLine();
+                                            System.out.println("Que observaciones le ves el cliente a la moto a la hora de su ingreso");
+                                            observacionesMoto = String.nextLine();
+                                            System.out.println("Entonces usted ingresa una "+ ingresoMoto+" ,con las siguientes observaciones: "+observacionesMoto+" Correcto?");
+                                            System.out.println("1.Si");
+                                            System.out.println("2.No");
+                                            opcion2 = input.nextInt();
+                                            switch (opcion2){
+                                                case 1:
+                                                    System.out.println("Registro exitoso del vehiculo");
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Reinicie la aplicacion y vuelva a ingresar los datos");
+                                                    break;
+                                                default:
+                                                    System.out.println("Coloque la opcion entre la 1 y 2");
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Ingrese el nombre especifico del vehiculo");
+                                            nombreVehiculo = String.nextLine();
+                                            System.out.println("Desea agregar que arreglos se le hizo al vehiculo");
+                                            System.out.println("1.Si");
+                                            System.out.println("2.No");
+                                            opcion3 = input.nextInt();
+                                            switch (opcion3){
+                                                case 1:
+                                                    System.out.println("Escriba que arreglos le realizo al vehiculo");
+                                                    arreglosmoto = String.nextLine();
+                                                    System.out.println("Agregue que piezas le cambio al vehiculo");
+                                                    nuevasPiezas = String.nextLine();
+                                                    System.out.println("A la moto "+nombreVehiculo+" se le hizo los siguientes arreglos "+arreglosmoto+" y se le cambio las siguientes piezas "+nuevasPiezas);
+                                                    System.out.println("El vehiculo sera retirado del sistema y entregado al dueño");
+                                                break;
+                                                case 2:
+                                                    System.out.println("El mecanico no especifica que arreglos se le hizo al propetario");
+                                                break;
+                                                default:
+                                                System.out.println("Coloque la opcion entre la 1 y 2");
+                                        }
+                                        break;
+                                        default:
+                                            System.out.println("Coloque la opcion entre la 1 y 2");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio6/src/EjercicioSeis.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 7</div>
+                    <div class="panel" id="panel">
+                        <h4>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso) en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioSiete {
+                            
+                                public static String nombre;
+                                public static int peso, opcion;
+                                public static double IMC, estatura;
+                                public static Scanner String = new Scanner(System.in);
+                                public static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    opcion = colocarDatosPersonales();
+                                    evaluarDatosPersonales(opcion);
+                                }
+                            
+                                public static int colocarDatosPersonales(){
+                                    System.out.println("Porfavor coloque su nombre");
+                                    nombre = String.nextLine();
+                                    System.out.println("Bienvenido "+nombre +" al ministerio de salud");
+                                    System.out.println("Te haremos una encuesta para saber tu indice de masa corporal o IMC");
+                                    System.out.println("Coloque su altura en mts");
+                                    estatura = input.nextDouble();
+                                    System.out.println("Coloque su peso en kg");
+                                    peso = input.nextInt();
+                                    System.out.println(nombre+" Usted pesa: "+peso+" y mide: "+estatura+" Correcto?");
+                                    System.out.println("1. Si");
+                                    System.out.println("2. No");
+                                    return input.nextInt();
+                                }
+                            
+                                public static void evaluarDatosPersonales(int opcion){
+                                    switch (opcion){
+                                        case 1:
+                                            IMC = peso/(estatura*estatura);
+                                            System.out.println("Su IMC es de:"+IMC);
+                                            if (IMC <= 18.5){
+                                                System.out.println("Usted tiene un peso bajo");
+                                            }else if(IMC >= 18.6 && IMC <= 24.9){
+                                                System.out.println("Usted tiene un peso normal");
+                                            }else if(IMC >= 25 && IMC <= 29.9){
+                                                System.out.println("Usted tiene sobrepeso");
+                                            }else if(IMC >= 30){
+                                                System.out.println("Usted sofre de obesidad");
+                                            }
+                                        break;
+                                        case 2:
+                                            System.out.println(nombre+" Reinicie la pagina e ingrese bien sus datos");
+                                        break;
+                                        default:
+                                            System.out.println("Reinicie la pagina y coloque bien los datos");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio7/src/EjercicioSiete.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 8</div>
+                    <div class="panel" id="panel">
+                        <h4>El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+                            public class EjercicioOcho {
+                                public static String sabor,decoraciones,pedidoTorta,porciones;
+                                public static int opcion,opcion2,costoTorta;
+                                private static Scanner String = new Scanner(System.in);
+                                private static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                                    opcion = opcionMenuPrincipal();
+                                    evaluarOpcionMenuPrincipal(opcion);
+                                }
+                            
+                                public static int opcionMenuPrincipal(){
+                                    System.out.println("Pasteleria Don Carlos");
+                                    System.out.println("1. Registrar pedido");
+                                    System.out.println("2. Tortas disponibles para venta");
+                                    System.out.println("3. Ventas diarias");
+                                    return input.nextInt();
+                                }
+                            
+                                public static void evaluarOpcionMenuPrincipal(int opcion) {
+                                    switch (opcion) {
+                                        case 1:
+                                            System.out.println("Registrar una torta");
+                                            System.out.println("De que sabor es la torta");
+                                            sabor = String.nextLine();
+                                            System.out.println("De cuantas porciones desea el cliente?");
+                                            porciones = String.nextLine();
+                                            System.out.println("Que decoracion desea el cliente?");
+                                            decoraciones = String.nextLine();
+                                            System.out.println("El cliente pidio una torta de: " + sabor + " de " + porciones + " porciones y con la siguiente decoracion: " + decoraciones + " Correcto?");
+                                            System.out.println("1. Si");
+                                            System.out.println("2. No");
+                                            opcion2 = input.nextInt();
+                                            switch (opcion2) {
+                                                case 1:
+                                                    System.out.println("El pedido fue registrado");
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Vuelva al inicio y verifique los datos");
+                                                    break;
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Pastel numero 1 con sabor ***** y decoraciones ****");
+                                            System.out.println("Pastel numero 2 con sabor ***** y decoraciones ****");
+                                            System.out.println("Pastel numero 3 con sabor ***** y decoraciones ****");
+                                            break;
+                                        case 3:
+                                            System.out.println("Registre el pedido ya entregado");
+                                            pedidoTorta = String.nextLine();
+                                            System.out.println("Cuanto fue la entrada del pedido");
+                                            costoTorta = input.nextInt();
+                                            System.out.println("Se añade al registro diario de venta: " + pedidoTorta + " la cual fue cobrada por " + costoTorta);
+                                            break;
+                                        default:
+                                            System.out.println("Introduzca la opcion correcta entre el 1 y el 3");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio8/src/EjercicioOcho.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 9</div>
+                    <div class="panel" id="panel">
+                        <h4>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioNueve {
+                            
+                                public static double base,altura,areaRectangulo,areaTriangulo,areaTrapecio,basemayor,basemenor ;
+                                public static int opcion;
+                                private static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                            
+                                    opcion = primerProceso();
+                                    segundoProceso(opcion);
+                            
+                                }
+                            
+                                private static int primerProceso(){
+                                    System.out.println("De que figura quieres definir el area?");
+                                    System.out.println("Recuerda dar los datos en cm");
+                                    System.out.println("1. Rectangulo");
+                                    System.out.println("2. Triangulo");
+                                    System.out.println("3. Trapecio");
+                                    return input.nextInt();
+                                }
+                            
+                                private static void segundoProceso(int opcion){
+                                    switch (opcion){
+                                        case 1:
+                                            System.out.println("Cual es la altura del rectangulo?");
+                                            altura = input.nextDouble();
+                                            System.out.println("Cual es la base del rectangulo?");
+                                            base = input.nextDouble();
+                                            areaRectangulo = base/altura;
+                                            System.out.println("Entonces si la base del rectangulo es: "+base+"y su altura es: "+altura+" entonces su area es de: "+areaRectangulo+"cm");
+                                            break;
+                                        case 2:
+                                            System.out.println("Cual es la altura del triangulo?");
+                                            altura = input.nextDouble();
+                                            System.out.println("Cual es la base del triangulo?");
+                                            base = input.nextDouble();
+                                            areaTriangulo = base*altura/2;
+                                            System.out.println("Entonces si la base del triangulo es: "+base+"y su altura es: "+altura+" entonces su area es de: "+areaTriangulo+"cm");
+                                            break;
+                                        case 3:
+                                            System.out.println("Cual es la altura del trapecio?");
+                                            altura = input.nextDouble();
+                                            System.out.println("Cual es la base mayor del trapecio?");
+                                            basemayor = input.nextDouble();
+                                            System.out.println("Cual es la base menor del trapecio?");
+                                            basemenor = input.nextDouble();
+                                            areaTrapecio = basemayor+basemenor/2+altura;
+                                            System.out.println("Entonces si la base mayor del trapecio es: "+basemayor+" y su base menor es: "+basemenor+"y su altura es: "+altura+" entonces su area es de: "+areaTrapecio+"cm");
+                                            break;
+                                        default:
+                                            System.out.println("Introduzca la opcion correcta entre el 1 y el 3");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio9/src/EjercicioNueve.java" target="_blank">Github</a></button>
+                </div>
+                <div class="acordeon">Ejercicio 10</div>
+                    <div class="panel" id="panel">
+                        <h4>El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta en Java</h4>
+                        <pre>
+                        <code>import java.util.Scanner;
+
+                            public class EjercicioDiez {
+                            
+                                public static String titularCuenta;
+                                public static int opcion, opcion2, opcion3, dinero, retiro, deposito, identificacion;
+                                private static Scanner input = new Scanner(System.in);
+                            
+                                public static void main(String[] args) {
+                            
+                                    dinero = 100000;
+                                    titularCuenta = " ********* ";
+                            
+                                    identificacion = capturarIdentificacionDelTitular();
+                                    opcion = capturarOpcionMenuPrincipal();
+                                    evaluarOpcionMenuPrincipal(opcion);
+                            
+                                }
+                            
+                                private static int capturarIdentificacionDelTitular() {
+                                    System.out.println("Bienvenido a la aplicacion del banco Su Banco Fiel");
+                                    System.out.println("Ingrese el numero del titular de la cuenta");
+                                    return input.nextInt();
+                                }
+                            
+                                private static int capturarOpcionMenuPrincipal() {
+                                    System.out.println("Seleccione que accion quiere realizar");
+                                    System.out.println("1. Realizar ingreso");
+                                    System.out.println("2. Retiro");
+                                    System.out.println("3. Consultas de valor");
+                                    return input.nextInt();
+                                }
+                            
+                                private static void evaluarOpcionMenuPrincipal(int opcion) {
+                                    switch (opcion) {
+                                        case 1:
+                                            System.out.println("Buenas " + titularCuenta + "Cual es la cantidad que desea depositar?");
+                                            deposito = input.nextInt();
+                            
+                                            System.out.println("El deposito es de: " + deposito + " Correcto?");
+                                            System.out.println("1. Si");
+                                            System.out.println("2. No");
+                                            opcion2 = input.nextInt();
+                            
+                                            switch (opcion2) {
+                                                case 1:
+                                                    System.out.println("El deposito fue hecho con exito");
+                                                    System.out.println("Su saldo es de: " + (dinero + deposito));
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Vuelve a realizar la transaccion y verifique los datos");
+                                                    break;
+                                                default:
+                                                    System.out.println("Introduzca la opcion correcta entre el 1 y el 2");
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Buenas " + titularCuenta + "Cual es la cantidad que desea retirar?");
+                                            retiro = input.nextInt();
+                            
+                                            System.out.println("El retiro es de: " + retiro + " Correcto?");
+                                            System.out.println("1. Si");
+                                            System.out.println("2. No");
+                                            opcion3 = input.nextInt();
+                            
+                                            switch (opcion3) {
+                                                case 1:
+                                                    System.out.println("Retire el dinero del cajero");
+                                                    System.out.println("El retiro fue hecho con exito");
+                                                    System.out.println("Su saldo es de: " + (dinero - retiro));
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Vuelve a realizar la transaccion y verifique los datos");
+                                                    break;
+                                                default:
+                                                    System.out.println("Introduzca la opcion correcta entre el 1 y el 2");
+                                            }
+                                            break;
+                                        case 3:
+                                            System.out.println("Buenas " + titularCuenta + " ,su numero de cuenta es:" + identificacion + " y su saldo es de " + dinero);
+                                            break;
+                                        default:
+                                            System.out.println("Introduzca la opcion correcta entre el 1 y el 3");
+                                    }
+                                }
+                            }
+                        </code>   
+                        </pre>
+                        <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%202%20Condicionales/Ejercicio10/src/EjercicioDiez.java" target="_blank">Github</a></button>
+                </div>
+                </div>
+            <div class="acordeon">Ciclos</div>
+                <div class="panel" id="panel">
+                    <div class="acordeon">Ejercicio 1</div>
+                        <div class="panel" id="panel">
+                            <h4>Realizar la siguiente figura por medio del ciclo Para</h4>
+                            <pre>
+                            <code>
+                                public class EjercicioUno {
+
+                                    public static int j, i;
+                                
+                                    public static void main(String[] args) {
+                                
+                                        for (i=10; i>0; i--){
+                                            for (j=1; j<10-i+1; j++){
+                                                System.out.print("*");
+                                            }
+                                            System.out.println("");
+                                        }}};
+
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio1/src/EjercicioUno.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 2</div>
+                        <div class="panel" id="panel">
+                            <h4>Realizar la siguiente figura por medio del ciclo Mientras - Hacer</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class ejercicioDos {
+                                
+                                    public static String espacios,asteriscos;
+                                    public static int valorARepetir, contador, i;
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args) {
+                                        contador = 0;
+                                        i = 0;
+                                        System.out.println("Escriba las veces que quiera repetir (escriba 10)");
+                                        valorARepetir = input.nextInt();
+                                        evaluarElValoraRepetir(valorARepetir);
+                                    }
+                                    public static void evaluarElValoraRepetir(int valorARepetir){
+                                        while (contador <= valorARepetir){
+                                            espacios = " ";
+                                            asteriscos = "*";
+                                            i = 0;
+                                            while (i < valorARepetir - contador){
+                                                espacios = espacios + " ";
+                                                i = i + 1;
+                                            }
+                                            i = 0;
+                                            while ( i < contador){
+                                                asteriscos = asteriscos +  "*";
+                                                i = i + 1;
+                                            }
+                                            System.out.println(espacios+asteriscos);
+                                            contador = contador + 1;
+                                        }
+                                    }
+                                }
+
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio2/src/ejercicioDos.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 3</div>
+                        <div class="panel" id="panel">
+                            <h4>Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</h4>
+                            <pre>
+                            <code>public class ejercicioTres {
+
+                                public static void main(String args[]) {
+                                    int h;
+                                    int i;
+                                    int j;
+                                    i = 11;
+                                    do {
+                                        h = 0;
+                                        j = 0;
+                                        do {
+                                            System.out.print(" ");
+                                            h = h+1;
+                                        } while (h!=i);
+                                        do {
+                                            System.out.print("*");
+                                            j = j+1;
+                                        } while (j!=12-i);
+                                        j = 0;
+                                        if (i!=11) {
+                                            do {
+                                                System.out.print("*");
+                                                j = j+1;
+                                            } while (j!=11-i);
+                                        }
+                                        System.out.println("");
+                                        i = i-1;
+                                    } while (i!=0);
+                                    i = 10;
+                                    do {
+                                        h = 0;
+                                        j = 0;
+                                        do {
+                                            System.out.print(" ");
+                                            h = h+1;
+                                        } while (h!=i);
+                                        do {
+                                            System.out.print("*");
+                                            j = j+1;
+                                        } while (j!=12-i);
+                                        j = 0;
+                                        if (i!=11) {
+                                            do {
+                                                System.out.print("*");
+                                                j = j+1;
+                                            } while (j!=11-i);
+                                        }
+                                        System.out.println("");
+                                        i = i-1;
+                                    } while (i!=9);
+                                    i = 10;
+                                    do {
+                                        h = 0;
+                                        j = 0;
+                                        do {
+                                            System.out.print(" ");
+                                            h = h+1;
+                                        } while (h!=i);
+                                        do {
+                                            System.out.print("*");
+                                            j = j+1;
+                                        } while (j!=12-i);
+                                        j = 0;
+                                        if (i!=11) {
+                                            do {
+                                                System.out.print("*");
+                                                j = j+1;
+                                            } while (j!=11-i);
+                                        }
+                                        System.out.println("");
+                                        i = i-1;
+                                    } while (i!=7);
+                                }
+                            }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio3/src/ejercicioTres.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 4</div>
+                        <div class="panel" id="panel">
+                            <h4>Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class EjercicioCuatro {
+                                
+                                    public static int numeroSolicitado;
+                                    public static Scanner String = new Scanner(System.in);
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args) {
+                                        numeroSolicitado = capturarNumeroMultiplicar();
+                                        evaluarNumeroMultiplicado(numeroSolicitado);
+                                    }
+                                    public static int capturarNumeroMultiplicar(){
+                                        System.out.println("ingrese el numero que quiere multiplicar");
+                                        return input.nextInt();
+                                    }
+                                    public static void evaluarNumeroMultiplicado(int numeroSolicitado){
+                                        for (int i =0 ; i <= 10; i++) {
+                                            System.out.println(numeroSolicitado + " * " + i + " = " + (numeroSolicitado* i));
+                                        }
+                                    }
+                                }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio4/src/EjercicioCuatro.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 5</div>
+                        <div class="panel" id="panel">
+                            <h4>Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class EjercicioCinco {
+                                
+                                    public static String capturarNombre;
+                                    public static int opcion;
+                                    public static Scanner String = new Scanner(System.in);
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args){
+                                        do {
+                                            opcion = CapturaOpcionMenu();
+                                            evaluarOpcionUsuario(opcion);
+                                        }while (opcion!=3);
+                                    }
+                                
+                                    public static int CapturaOpcionMenu(){
+                                        System.out.println("Menu de usuario");
+                                        System.out.println("1. Captura nombre");
+                                        System.out.println("2. Saludar persona");
+                                        System.out.println("3. Salir del sistema");
+                                        return input.nextInt();
+                                    }
+                                
+                                    public static void evaluarOpcionUsuario(int opcion){
+                                            switch (opcion){
+                                                case 1:
+                                                    System.out.println("Coloque un nombre");
+                                                    capturarNombre = String.nextLine();
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Hola "+capturarNombre);
+                                                    break;
+                                                case 3:
+                                                    System.out.println("Gracias por usar esta aplicacion hasta luego");
+                                                    break;
+                                            }
+                                    }
+                                }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio5/src/EjercicioCinco.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 6</div>
+                        <div class="panel" id="panel">
+                            <h4>Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class ejercicioSeis {
+                                
+                                    public static String nombreUsuario1,nombreUsuario2,nombreUsuario3, organizacion1,organizacion2,organizacion3,telefono1,telefono2,telefono3;
+                                    public static int opcion,opcion2;
+                                    public static Scanner lword = new Scanner(System.in);
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args){
+                                
+                                        nombreUsuario1 =  "";
+                                        nombreUsuario2 = "";
+                                        nombreUsuario3 = "";
+                                        organizacion1 = "";
+                                        organizacion2 = "";
+                                        organizacion3 = "";
+                                        telefono1 = "";
+                                        telefono2 = "";
+                                        telefono3 = "";
+                                
+                                        do {
+                                            opcion = capturaOpcionMenu();
+                                            evaluarOpcionUsuario(opcion);
+                                        }while (opcion!=4);
+                                    }
+                                
+                                    public static int capturaOpcionMenu(){
+                                
+                                        System.out.println("Menu de usuario");
+                                        System.out.println("1. Escribe 3 contactos");
+                                        System.out.println("2. Buscar contacto almacenados");
+                                        System.out.println("3. Eliminar contacto");
+                                        System.out.println("4. Salir del sistema");
+                                
+                                        return input.nextInt();
+                                    }
+                                
+                                    public static void evaluarOpcionUsuario(int opcion){
+                                
+                                        switch (opcion){
+                                            case 1:
+                                                System.out.println(" ");
+                                                System.out.println("Ingrese los datos del primer contacto");
+                                                System.out.println("Cual es el nombre");
+                                                nombreUsuario1 = lword.nextLine();
+                                                System.out.println("Cual es el numero telefonico");
+                                                telefono1 = lword.nextLine();
+                                                System.out.println("En donde trabaja?");
+                                                organizacion1 = lword.nextLine();
+                                                System.out.println(" ");
+                                                System.out.println("Contacto 1 Registrado");
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Ingrese los datos del segundo contacto");
+                                                System.out.println("Cual es el nombre");
+                                                nombreUsuario2 = lword.nextLine();
+                                                System.out.println("Cual es el numero telefonico");
+                                                telefono2 = lword.nextLine();
+                                                System.out.println("En donde trabaja?");
+                                                organizacion2 = lword.nextLine();
+                                                System.out.println(" ");
+                                                System.out.println("Contacto 2 Registrado");
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Ingrese los datos del tercer contacto");
+                                                System.out.println("Cual es el nombre");
+                                                nombreUsuario3 = lword.nextLine();
+                                                System.out.println("Cual es el numero telefonico");
+                                                telefono3 = lword.nextLine();
+                                                System.out.println("En donde trabaja?");
+                                                organizacion3 = lword.nextLine();
+                                                System.out.println(" ");
+                                                System.out.println("Contacto 3 Registrado");
+                                                System.out.println(" ");
+                                                System.out.println("Todos los contactos registrados");
+                                                break;
+                                            case 2:
+                                                System.out.println(" ");
+                                                System.out.println("Contactos registrados");
+                                                System.out.println(" ");
+                                                if (nombreUsuario1 != " " || telefono1 != " " || organizacion1 != " "){
+                                                    System.out.println("Contacto 1 "+nombreUsuario1+" Telefono:"+telefono1+" Organizacion "+organizacion1);
+                                                }else{
+                                                    System.out.println("Contacto 1 no registrado");
+                                                }
+                                                System.out.println(" ");
+                                                if (nombreUsuario2 != " " || telefono2 != " " || organizacion2 != " "){
+                                                    System.out.println("Contacto 2 "+nombreUsuario2+" Telefono:"+telefono2+" Organizacion "+organizacion2);
+                                                }else{
+                                                    System.out.println("Contacto 2 no registrado");
+                                                }
+                                                System.out.println(" ");
+                                                if (nombreUsuario2 != " " || telefono3 != " " || organizacion3 != " "){
+                                                    System.out.println("Contacto 3 "+nombreUsuario3+" Telefono:"+telefono3+" Organizacion "+organizacion3);
+                                                }else{
+                                                    System.out.println("Contacto 3 no registrado");
+                                                }
+                                                System.out.println(" ");
+                                                break;
+                                            case 3:
+                                                System.out.println(" ");
+                                                System.out.println("Que contacto desea eliminar?");
+                                                System.out.println(" ");
+                                                System.out.println("1. Contacto 1");
+                                                System.out.println("2. Contacto 2");
+                                                System.out.println("3. Contacto 3");
+                                                System.out.println(" ");
+                                                opcion2 = input.nextInt();
+                                                System.out.println(" ");
+                                                switch (opcion2){
+                                                    case 1:
+                                                        nombreUsuario1 = "";
+                                                        organizacion1 = "";
+                                                        telefono1 = "";
+                                                        System.out.println("Contacto 1 Eliminado");
+                                                        System.out.println(" ");
+                                                        break;
+                                                    case 2:
+                                                        nombreUsuario2 = "";
+                                                        organizacion2 = "";
+                                                        telefono2 = "";
+                                                        System.out.println("Contacto 2 Eliminado");
+                                                        System.out.println(" ");
+                                                        break;
+                                                    case 3:
+                                                        nombreUsuario3 = "";
+                                                        organizacion3 = "";
+                                                        telefono3 = "";
+                                                        System.out.println("Contacto 3 Eliminado");
+                                                        System.out.println(" ");
+                                                        break;
+                                                }
+                                                break;
+                                            case 4:
+                                                System.out.println("Hasta luego");
+                                                break;
+                                        }
+                                    }
+                                }
+
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio6/src/ejercicioSeis.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 7</div>
+                        <div class="panel" id="panel">
+                            <h4>El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class EjercicioSiete {
+                                
+                                    public static String nombrePropetario, nombrePropetario2, nombrePropetario3, nombrePropetario4, nombrePropetario5, numeroPropetario, numeroPropetario2, numeroPropetario3, numeroPropetario4, numeroPropetario5, placaVehiculo, placaVehiculo2,placaVehiculo3, placaVehiculo4, placaVehiculo5, marcaVehiculo, marcaVehiculo2, marcaVehiculo3, marcaVehiculo4, marcaVehiculo5;
+                                    public static int opcion,opcion2,opcion3,opcion4,opcion5;
+                                    public static Scanner lword = new Scanner(System.in);
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args){
+                                
+                                        nombrePropetario = "";
+                                        numeroPropetario = "";
+                                        placaVehiculo = "";
+                                        marcaVehiculo = "";
+                                        nombrePropetario2 = "";
+                                        numeroPropetario2 = "";
+                                        placaVehiculo2 = "";
+                                        marcaVehiculo2 = "";
+                                        nombrePropetario3 = "";
+                                        numeroPropetario3 = "";
+                                        placaVehiculo3 = "";
+                                        marcaVehiculo3 = "";
+                                        nombrePropetario4 = "";
+                                        numeroPropetario4 = "";
+                                        placaVehiculo4 = "";
+                                        marcaVehiculo4 = "";
+                                        nombrePropetario5 = "";
+                                        numeroPropetario5 = "";
+                                        placaVehiculo5 = "";
+                                        marcaVehiculo5 = "";
+                                
+                                        do {
+                                            opcion = capturaOpcionMenu();
+                                            evaluarOpcionUsuario(opcion);
+                                        }while (opcion!=4);
+                                    }
+                                
+                                    public static int capturaOpcionMenu(){
+                                
+                                        System.out.println(" ");
+                                        System.out.println("Bienvenido al parqueadero nocturno El Guardian");
+                                        System.out.println(" ");
+                                        System.out.println("1. Ingresar vehiculo");
+                                        System.out.println("2. Retirar vehiculo");
+                                        System.out.println("3. Consultar existencia de vehiculo");
+                                        System.out.println("4. Salir del sistema");
+                                        System.out.println(" ");
+                                
+                                        return input.nextInt();
+                                    }
+                                
+                                    public static void evaluarOpcionUsuario(int opcion){
+                                        switch (opcion){
+                                            case 1:
+                                                System.out.println(" ");
+                                                System.out.println("Elija un puesto de estacionamiento");
+                                                System.out.println(" ");
+                                                System.out.println("1. Primer puesto");
+                                                System.out.println("2. Segundo puesto");
+                                                System.out.println("3. Tercer puesto");
+                                                System.out.println("4. Cuarto puesto");
+                                                System.out.println("5. Quinto puesto");
+                                                System.out.println(" ");
+                                                opcion2 = input.nextInt();
+                                                switch (opcion2){
+                                                    case 1:
+                                                        if (nombrePropetario.equals("") || numeroPropetario.equals("") || placaVehiculo.equals("") || marcaVehiculo.equals("")){
+                                                            System.out.println(" ");
+                                                            System.out.println("Parqueadero disponible");
+                                                            System.out.println(" ");
+                                                            System.out.println("Nombre propetario");
+                                                            nombrePropetario = lword.nextLine();
+                                                            System.out.println("Numero telefonico");
+                                                            numeroPropetario = lword.nextLine();
+                                                            System.out.println("Placa vehiculo");
+                                                            placaVehiculo = lword.nextLine();
+                                                            System.out.println("Marca vehiculo");
+                                                            marcaVehiculo = lword.nextLine();
+                                                            System.out.println(" ");
+                                                            System.out.println("Vehiculo registrado con exito");
+                                                            System.out.println(" ");
+                                                        }else {
+                                                            System.out.println("Parqueadero no disponible");
+                                                        }
+                                                        break;
+                                                    case 2:
+                                                        if (nombrePropetario2.equals("") || numeroPropetario2.equals("") || placaVehiculo2.equals("") || marcaVehiculo2.equals("")){
+                                                            System.out.println(" ");
+                                                            System.out.println("Parqueadero disponible");
+                                                            System.out.println(" ");
+                                                            System.out.println("Nombre propetario");
+                                                            nombrePropetario2 = lword.nextLine();
+                                                            System.out.println("Numero telefonico");
+                                                            numeroPropetario2 = lword.nextLine();
+                                                            System.out.println("Placa vehiculo");
+                                                            placaVehiculo2 = lword.nextLine();
+                                                            System.out.println("Marca vehiculo");
+                                                            marcaVehiculo2 = lword.nextLine();
+                                                            System.out.println(" ");
+                                                            System.out.println("Vehiculo registrado con exito");
+                                                            System.out.println(" ");
+                                                        }else {
+                                                            System.out.println("Parqueadero no disponible");
+                                                        }
+                                                        break;
+                                                    case 3:
+                                                        if (nombrePropetario3.equals("") || numeroPropetario3.equals("") || placaVehiculo3.equals("") || marcaVehiculo3.equals("")){
+                                                            System.out.println(" ");
+                                                            System.out.println("Parqueadero disponible");
+                                                            System.out.println(" ");
+                                                            System.out.println("Nombre propetario");
+                                                            nombrePropetario3 = lword.nextLine();
+                                                            System.out.println("Numero telefonico");
+                                                            numeroPropetario3 = lword.nextLine();
+                                                            System.out.println("Placa vehiculo");
+                                                            placaVehiculo3 = lword.nextLine();
+                                                            System.out.println("Marca vehiculo");
+                                                            marcaVehiculo3 = lword.nextLine();
+                                                            System.out.println(" ");
+                                                            System.out.println("Vehiculo registrado con exito");
+                                                            System.out.println(" ");
+                                                        }else {
+                                                            System.out.println("Parqueadero no disponible");
+                                                        }
+                                                        break;
+                                                    case 4:
+                                                        if (nombrePropetario4.equals("") || numeroPropetario4.equals("") || placaVehiculo4.equals("") || marcaVehiculo4.equals("")){
+                                                            System.out.println(" ");
+                                                            System.out.println("Parqueadero disponible");
+                                                            System.out.println(" ");
+                                                            System.out.println("Nombre propetario");
+                                                            nombrePropetario4 = lword.nextLine();
+                                                            System.out.println("Numero telefonico");
+                                                            numeroPropetario4 = lword.nextLine();
+                                                            System.out.println("Placa vehiculo");
+                                                            placaVehiculo4 = lword.nextLine();
+                                                            System.out.println("Marca vehiculo");
+                                                            marcaVehiculo4 = lword.nextLine();
+                                                            System.out.println(" ");
+                                                            System.out.println("Vehiculo registrado con exito");
+                                                            System.out.println(" ");
+                                                        }else {
+                                                            System.out.println("Parqueadero no disponible");
+                                                        }
+                                                        break;
+                                                    case 5:
+                                                        if (nombrePropetario5.equals("") || numeroPropetario5.equals("") || placaVehiculo5.equals("") || marcaVehiculo5.equals("")){
+                                                            System.out.println(" ");
+                                                            System.out.println("Parqueadero disponible");
+                                                            System.out.println(" ");
+                                                            System.out.println("Nombre propetario");
+                                                            nombrePropetario5 = lword.nextLine();
+                                                            System.out.println("Numero telefonico");
+                                                            numeroPropetario5 = lword.nextLine();
+                                                            System.out.println("Placa vehiculo");
+                                                            placaVehiculo5 = lword.nextLine();
+                                                            System.out.println("Marca vehiculo");
+                                                            marcaVehiculo5 = lword.nextLine();
+                                                            System.out.println(" ");
+                                                            System.out.println("Vehiculo registrado con exito");
+                                                            System.out.println(" ");
+                                                        }else {
+                                                            System.out.println("Parqueadero no disponible");
+                                                        }
+                                                        break;
+                                                }
+                                                break;
+                                            case 2:
+                                                System.out.println(" ");
+                                                System.out.println("Que vehiculo desea retirar");
+                                                System.out.println(" ");
+                                                System.out.println("1. Primer puesto");
+                                                System.out.println("2. Segundo puesto");
+                                                System.out.println("3. Tercer puesto");
+                                                System.out.println("4. Cuarto puesto");
+                                                System.out.println("5. Quinto puesto");
+                                                System.out.println(" ");
+                                                opcion3 = input.nextInt();
+                                                switch (opcion3){
+                                                    case 1:
+                                                        if (nombrePropetario.equals("") || numeroPropetario.equals("") || placaVehiculo.equals("") || marcaVehiculo.equals("")){
+                                                            System.out.println("No hay ningun vehiculo en este parqueadero");
+                                                        }else {
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo+" "+placaVehiculo+" y su dueño es "+nombrePropetario+" "+numeroPropetario);
+                                                            System.out.println(" ");
+                                                            System.out.println("Desea retirar este vehiculo?");
+                                                            System.out.println("1. Si");
+                                                            System.out.println("2. No");
+                                                            System.out.println(" ");
+                                                            opcion4 = input.nextInt();
+                                                            switch (opcion4){
+                                                                case 1:
+                                                                    nombrePropetario = "";
+                                                                    numeroPropetario = "";
+                                                                    placaVehiculo = "";
+                                                                    marcaVehiculo = "";
+                                                                    System.out.println("Acerquese al punto de control con el ticket");
+                                                                    System.out.println(" ");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 2:
+                                                        if (nombrePropetario2.equals("") || numeroPropetario2.equals("") || placaVehiculo2.equals("") || marcaVehiculo2.equals("")){
+                                                            System.out.println("No hay ningun vehiculo en este parqueadero");
+                                                        }else {
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo2+" "+placaVehiculo2+" y su dueño es "+nombrePropetario2+" "+numeroPropetario2);
+                                                            System.out.println(" ");
+                                                            System.out.println("Desea retirar este vehiculo?");
+                                                            System.out.println("1. Si");
+                                                            System.out.println("2. No");
+                                                            System.out.println(" ");
+                                                            opcion4 = input.nextInt();
+                                                            switch (opcion4){
+                                                                case 1:
+                                                                    nombrePropetario2 = "";
+                                                                    numeroPropetario2 = "";
+                                                                    placaVehiculo2 = "";
+                                                                    marcaVehiculo2 = "";
+                                                                    System.out.println("Acerquese al punto de control con el ticket");
+                                                                    System.out.println(" ");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 3:
+                                                        if (nombrePropetario3.equals("") || numeroPropetario3.equals("") || placaVehiculo3.equals("") || marcaVehiculo3.equals("")){
+                                                            System.out.println("No hay ningun vehiculo en este parqueadero");
+                                                        }else {
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo3+" "+placaVehiculo3+" y su dueño es "+nombrePropetario3+" "+numeroPropetario3);
+                                                            System.out.println(" ");
+                                                            System.out.println("Desea retirar este vehiculo?");
+                                                            System.out.println("1. Si");
+                                                            System.out.println("2. No");
+                                                            System.out.println(" ");
+                                                            opcion4 = input.nextInt();
+                                                            switch (opcion4){
+                                                                case 1:
+                                                                    nombrePropetario3 = "";
+                                                                    numeroPropetario3 = "";
+                                                                    placaVehiculo3 = "";
+                                                                    marcaVehiculo3 = "";
+                                                                    System.out.println("Acerquese al punto de control con el ticket");
+                                                                    System.out.println(" ");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 4:
+                                                        if (nombrePropetario4.equals("") || numeroPropetario4.equals("") || placaVehiculo4.equals("") || marcaVehiculo4.equals("")){
+                                                            System.out.println("No hay ningun vehiculo en este parqueadero");
+                                                        }else {
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo4+" "+placaVehiculo4+" y su dueño es "+nombrePropetario4+" "+numeroPropetario4);
+                                                            System.out.println(" ");
+                                                            System.out.println("Desea retirar este vehiculo?");
+                                                            System.out.println("1. Si");
+                                                            System.out.println("2. No");
+                                                            System.out.println(" ");
+                                                            opcion4 = input.nextInt();
+                                                            switch (opcion4){
+                                                                case 1:
+                                                                    nombrePropetario4 = "";
+                                                                    numeroPropetario4 = "";
+                                                                    placaVehiculo4 = "";
+                                                                    marcaVehiculo4 = "";
+                                                                    System.out.println("Acerquese al punto de control con el ticket");
+                                                                    System.out.println(" ");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 5:
+                                                        if (nombrePropetario5.equals("") || numeroPropetario5.equals("") || placaVehiculo5.equals("") || marcaVehiculo5.equals("")){
+                                                            System.out.println("No hay ningun vehiculo en este parqueadero");
+                                                        }else {
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo5+" "+placaVehiculo5+" y su dueño es "+nombrePropetario5+" "+numeroPropetario5);
+                                                            System.out.println(" ");
+                                                            System.out.println("Desea retirar este vehiculo?");
+                                                            System.out.println("1. Si");
+                                                            System.out.println("2. No");
+                                                            System.out.println(" ");
+                                                            opcion4 = input.nextInt();
+                                                            switch (opcion4){
+                                                                case 1:
+                                                                    nombrePropetario5 = "";
+                                                                    numeroPropetario5 = "";
+                                                                    placaVehiculo5 = "";
+                                                                    marcaVehiculo5 = "";
+                                                                    System.out.println("Acerquese al punto de control con el ticket");
+                                                                    System.out.println(" ");
+                                                            }
+                                                        }
+                                                        break;
+                                                    }
+                                                break;
+                                            case 3:
+                                                System.out.println("Elija un puesto de estacionamiento");
+                                                System.out.println(" ");
+                                                System.out.println("1. Primer puesto");
+                                                System.out.println("2. Segundo puesto");
+                                                System.out.println("3. Tercer puesto");
+                                                System.out.println("4. Cuarto puesto");
+                                                System.out.println("5. Quinto puesto");
+                                                System.out.println(" ");
+                                                opcion5 = input.nextInt();
+                                                switch (opcion5){
+                                                    case 1:
+                                                        if(marcaVehiculo != "" || placaVehiculo != ""){
+                                                            System.out.println(" ");
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo+" y su placa es "+placaVehiculo);
+                                                        }else {
+                                                            System.out.println(" ");
+                                                            System.out.println("No hay ningun vehiculo en este puesto");
+                                                        }
+                                                        break;
+                                                case 2:
+                                                        if(marcaVehiculo2 != "" || placaVehiculo2 != ""){
+                                                            System.out.println(" ");
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo2+" y su placa es "+placaVehiculo2);
+                                                        }else {
+                                                            System.out.println(" ");
+                                                            System.out.println("No hay ningun vehiculo en este puesto");
+                                                        }
+                                                        break;
+                                                    case 3:
+                                                        if(marcaVehiculo3 != "" || placaVehiculo3 != ""){
+                                                            System.out.println(" ");
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo3+" y su placa es "+placaVehiculo3);
+                                                        }else {
+                                                            System.out.println(" ");
+                                                            System.out.println("No hay ningun vehiculo en este puesto");
+                                                        }
+                                                        break;
+                                                    case 4:
+                                                        if(marcaVehiculo4 != "" || placaVehiculo4 != ""){
+                                                            System.out.println(" ");
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo4+" y su placa es "+placaVehiculo4);
+                                                        }else {
+                                                            System.out.println(" ");
+                                                            System.out.println("No hay ningun vehiculo en este puesto");
+                                                        }
+                                                        break;
+                                                    case 5:
+                                                        if(marcaVehiculo5 != "" || placaVehiculo5 != ""){
+                                                            System.out.println(" ");
+                                                            System.out.println("Este vehiculo se encuentra en este parqueadero");
+                                                            System.out.println(marcaVehiculo5+" y su placa es "+placaVehiculo5);
+                                                        }else {
+                                                            System.out.println(" ");
+                                                            System.out.println("No hay ningun vehiculo en este puesto");
+                                                        }
+                                                        break;
+                                                }
+                                                break;
+                                            case 4:
+                                                break;
+                                            default:
+                                                System.out.println("Coloque una opcion entre la 1 y 3");
+                                        }
+                                    }
+                                }
+
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio7/src/EjercicioSiete.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 8</div>
+                        <div class="panel" id="panel">
+                            <h4>La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class ejercicioOcho {
+                                
+                                    public static String nombreUsuario1, nombreUsuario2,nombreUsuario3,nombreUsuario4,nombreUsuario5,nombreUsuario6,nombreUsuario7,nombreUsuario8;
+                                    public static int opcion,opcion2, nota1,nota2,nota3,nota4,nota5,nota6,nota7,nota8;
+                                    public static Scanner lword = new Scanner(System.in);
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args){
+                                
+                                        nombreUsuario1 = "Estudiante no registrado";
+                                        nombreUsuario2 = "Estudiante no registrado";
+                                        nombreUsuario3 = "Estudiante no registrado";
+                                        nombreUsuario4 = "Estudiante no registrado";
+                                        nombreUsuario5 = "Estudiante no registrado";
+                                        nombreUsuario6 = "Estudiante no registrado";
+                                        nombreUsuario7 = "Estudiante no registrado";
+                                        nombreUsuario8 = "Estudiante no registrado";
+                                        nota1 = 0;
+                                        nota2 = 0;
+                                        nota3 = 0;
+                                        nota4 = 0;
+                                        nota5 = 0;
+                                        nota6 = 0;
+                                        nota7 = 0;
+                                        nota8 = 0;
+                                
+                                        do {
+                                            opcion = capturaOpcionMenu();
+                                            evaluarOpcionUsuario(opcion);
+                                        }while (opcion!=3);
+                                    }
+                                
+                                    public static int capturaOpcionMenu(){
+                                
+                                        System.out.println(" ");
+                                        System.out.println("Menu de usuario");
+                                        System.out.println("1. Registrar estudiantes");
+                                        System.out.println("2. Consultar estudiantes y notas");
+                                        System.out.println("3. Salir del sistema");
+                                        System.out.println(" ");
+                                
+                                        return input.nextInt();
+                                    }
+                                
+                                    public static void evaluarOpcionUsuario(int opcion){
+                                        switch (opcion){
+                                            case 1:
+                                
+                                                System.out.println(" ");
+                                                System.out.println("Registrar Estudiante 1");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario1 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota1 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 2");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario2 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota2 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 3");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario3 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota3 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 4");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario4 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota4 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 5");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario5 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota5 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 6");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario6 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota6 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 7");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario7 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota7 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                                System.out.println("Registrar Estudiante 8");
+                                                System.out.println("Cual es el nombre del estudiante?");
+                                                nombreUsuario8 = lword.nextLine();
+                                                System.out.println("Cual es la nota del estudiante?");
+                                                nota8 = input.nextInt();
+                                                System.out.println(" ");
+                                
+                                               break;
+                                            case 2:
+                                
+                                                System.out.println(" ");
+                                                System.out.println("Consultar notas por estudiante");
+                                                System.out.println("1. "+nombreUsuario1);
+                                                System.out.println("2. "+nombreUsuario2);
+                                                System.out.println("3. "+nombreUsuario3);
+                                                System.out.println("4. "+nombreUsuario4);
+                                                System.out.println("5. "+nombreUsuario5);
+                                                System.out.println("6. "+nombreUsuario6);
+                                                System.out.println("7. "+nombreUsuario7);
+                                                System.out.println("8. "+nombreUsuario8);
+                                
+                                                opcion2 = input.nextInt();
+                                
+                                                switch (opcion2){
+                                                    case 1:
+                                                        if (nombreUsuario1.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota1 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 2:
+                                                        if (nombreUsuario2.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota2 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 3:
+                                                        if (nombreUsuario3.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota3 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 4:
+                                                        if (nombreUsuario4.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota4 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 5:
+                                                        if (nombreUsuario5.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota5 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 6:
+                                                        if (nombreUsuario6.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota6 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                    case 7:
+                                                        if (nombreUsuario7.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota7 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                    case 8:
+                                                        if (nombreUsuario8.equals("")) {
+                                                            System.out.println(" ");
+                                                            System.out.println("Estudiante no registrado");
+                                                            System.out.println(" ");
+                                                        }else{
+                                                            System.out.println(" ");
+                                                            if (nota8 >= 7){
+                                                                System.out.println("Estudiante Aprobado");
+                                                            }else{
+                                                                System.out.println("Estudiante Suspendido");
+                                                            }
+                                                        }
+                                                        break;
+                                                }
+                                                break;
+                                            case 3:
+                                                System.out.println("Hasta luego gracias por usar esta aplicacion");
+                                                break;
+                                            default:
+                                                System.out.println("Coloque una opcion entre la 1 y 3");
+                                        }
+                                    }
+                                }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%203%20Ciclos/Ejercicio8/src/ejercicioOcho.java" target="_blank">Github</a></button>
+                    </div>
+                </div>
+            <div class="acordeon">Arreglos</div>
+                <div class="panel" id="panel">
+                    <div class="acordeon">Ejercicio 1</div>
+                        <div class="panel" id="panel">
+                            <h4>Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class ejercicioUno {
+                                
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args){
+                                        int[] num = new int[5];
+                                        for (int i=0; i<5; i++){
+                                            System.out.println("Ingrese un numero para el "+i);
+                                            num[i] = input.nextInt();
+                                        }
+                                        System.out.println(" ");
+                                        for (int i=0;i<5;i++){
+                                            System.out.println("["+i+"] "+num[i]);
+                                        }
+                                    }
+                                }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%204%20Arreglos/Ejercicio1/src/ejercicioUno.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 2</div>
+                        <div class="panel" id="panel">
+                            <h4>Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo</h4>
+                            <pre>
+                            <code>public class ejercicioDos {
+
+                                public static int i,j;
+                                public static void main(String args[]) {
+                                    int[] num = new int[20];
+                                    i = 0;
+                                    j = 0;
+                                    System.out.println(" ");
+                                    for (i=0; i <19;i++){
+                                        num[i] = (int)(Math.random()*100);
+                                    }
+                                    i = 0;
+                            
+                                    System.out.print("Numeros pares ");
+                                    while(i < 19){
+                                        if (num[i]%2==0){
+                                            System.out.print(num[i]+",");
+                                        }
+                                        i = i + 1;
+                                    }
+                                    System.out.println(" ");
+                                    System.out.print("Numeros impares ");
+                                    while (j < 19){
+                                        if (num[j]%2!=0){
+                                            System.out.print(num[j]+",");
+                                        }
+                                        j = j + 1;
+                                    }
+                                    System.out.println(" ");
+                                }
+                            }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%204%20Arreglos/Ejercicio2/src/ejercicioDos.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 3</div>
+                        <div class="panel" id="panel">
+                            <h4>Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.</h4>
+                            <pre>
+                            <code>public class ejercicioTres {
+
+                                public static int contador,contador2,i,num[],primo;
+                            
+                                public static void main(String args[]) {
+                            
+                                    num = new int[1000];
+                            
+                                    for (i=1;i<999;i++){
+                                        num[i]= i;
+                                    }
+                                    contador2=0;
+                                    while (contador2<1){
+                                        System.out.print("Numeros primos: ");
+                                        for (i=1;i<999;i++){
+                                            contador = 0;
+                                            primo = 1;
+                                            while (primo <= i){
+                                                if (i % primo == 0){
+                                                    contador = contador + 1;
+                                                }
+                                                primo = primo + 1;
+                                            }
+                                            if (contador == 2){
+                                                System.out.print(num[i]+" ,");
+                                            }
+                                        }
+                                        contador2=contador2+1;
+                                    }
+                                }
+                            }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%204%20Arreglos/Ejercicio3/src/ejercicioTres.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 4</div>
+                        <div class="panel" id="panel">
+                            <h4>Dada la siguiente matriz bidimensional, el cual debe de quemar en el código</h4>
+                            <pre>
+                            <code>public class ejercicioCuatro {
+
+                                public static int columna,columna2,fila,fila2,i,j,matriz[][],matriz2[][],x;
+                            
+                                public static void main(String args[]) {
+                            
+                                    matriz = new int[4][5];
+                                    matriz2 = new int[4][5];
+                            
+                                    matriz[0][0] = 1;
+                                    matriz[0][1] = 2;
+                                    matriz[0][2] = 3;
+                                    matriz[0][3] = 4;
+                                    matriz[0][4] = 5;
+                                    matriz[1][0] = 6;
+                                    matriz[1][1] = 7;
+                                    matriz[1][2] = 8;
+                                    matriz[1][3] = 9;
+                                    matriz[1][4] = 10;
+                                    matriz[2][0] = 11;
+                                    matriz[2][1] = 12;
+                                    matriz[2][2] = 13;
+                                    matriz[2][3] = 14;
+                                    matriz[2][4] = 15;
+                                    matriz[3][0] = 16;
+                                    matriz[3][1] = 17;
+                                    matriz[3][2] = 18;
+                                    matriz[3][3] = 19;
+                                    matriz[3][4] = 20;
+                            
+                                    for (fila=0;fila<=3;fila++) {
+                                        for (columna=0;columna<=4;columna++) {
+                                            System.out.print(matriz[fila][columna]+" ");
+                                        }
+                                        System.out.println(" ");
+                                    }
+                            
+                                    System.out.println(" ");
+                                    x = 1;
+                            
+                                    for (i=0;i<=3;i++) {
+                                        for (j=0;j<=4;j++) {
+                                            matriz2[i][j] = x;
+                                            x = x+1;
+                                        }
+                                    }
+                            
+                                    for (fila2=0;fila2<=3;fila2++) {
+                                        for (columna2=0;columna2<=4;columna2++) {
+                                            if (fila2%2==0) {
+                                                System.out.print(matriz2[fila2][columna2]+" ");
+                                            } else {
+                                                System.out.print(matriz2[fila2][4-columna2]+" ");
+                                            }
+                                        }
+                                        System.out.println(" ");
+                                    }
+                            
+                                    System.out.println(" ");
+                                }
+                            }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%204%20Arreglos/Ejercicio4/src/ejercicioCuatro.java" target="_blank">Github</a></button>
+                    </div>
+                    <div class="acordeon">Ejercicio 5</div>
+                        <div class="panel" id="panel">
+                            <h4>Se debe de imprimir el siguiente cuadro</h4>
+                            <pre>
+                            <code>import java.util.Scanner;
+
+                                public class ejercicioCinco {
+                                
+                                    public static int columna, columna2, columnausuario, fila, fila2, filausuario, matriz[][];
+                                
+                                    public static Scanner input = new Scanner(System.in);
+                                
+                                    public static void main(String[] args) {
+                                
+                                        matriz = new int[10][10];
+                                        for (fila = 0; fila < 10; fila++) {
+                                            for (columna = 0; columna < 10; columna++) {
+                                                if (fila != 10) {
+                                
+                                                    System.out.print((columna < 9 ? "0" : "") + (columna + 1) + "x" + (fila < 9 ? "0" : "") + (fila + 1) + "    ");
+                                
+                                                } else {
+                                                    System.out.print((columna + 1) + "x" + (fila + 1) + " ");
+                                                }
+                                                  //System.out.print((fila != 10) ? ((columna < 9 ? "0" : "") + (columna + 1) + "x" + (fila < 9 ? "0" : "") + (fila + 1) + "    ") : ((columna + 1) + "x" + (fila + 1) + " "));
+                                            }
+                                            System.out.println(" ");
+                                        }
+                                        System.out.println(" ");
+                                        for (fila2 = 0; fila2 < 10; fila2++) {
+                                            for (columna2 = 0; columna2 < 10; columna2++) {
+                                                matriz[fila2][columna2] = (fila2 + 1) * (columna2 + 1);
+                                            }
+                                        }
+                                        System.out.println("Ingrese la fila que desea consultar");
+                                        filausuario = input.nextInt();
+                                        System.out.println("Ingrese la columna que desea consultar");
+                                        columnausuario = input.nextInt();
+                                        System.out.println(matriz[filausuario - 1][columnausuario - 1]);
+                                    }
+                                }
+                            </code>   
+                            </pre>
+                            <button><a href="https://github.com/rjfuentes99/Sofka-U-Cantera-1-TallerJava/blob/main/Taller%204%20Arreglos/Ejercicio5/src/ejercicioCinco.java" target="_blank">Github</a></button>
+                    </div>
+                </div>             
+</div>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <title>Estudios realizados</title>
+    </head>
+    <body>
+            <section class="principal">
+                <nav class="container-nav" id="containernav">
+                <div class="margen-imagen">
+                    <img src="../imagenes/perfil.jpg" width="100px" height="100px" alt="" class="imagen">
+                </div>
+                
+                <div class="margen-botones">
+                    <button><a href="../html/index.html" class="boton" >Inicio</a></button>
+                    <button><a href="../html/index2.html" class="boton">Experiencia</a></button>
+                    <button><a href="../html/index3.html" class="boton">Referencias Personales</a></button>
+                    <button><a href="../html/index5.html" class="boton">Referencias Familiares</a></button>
+                    <button><a href="../html/index4.html" class="boton">Estudios</a></button>
+                </div>  
+                <label for="">Colores</label>
+                <select onchange=cambiarColores(this) class="selectColor" id="selectColor">
+                    <option value="1" ><a href="" >Predeterminado</a></option>
+                    <option value="2" ><a href="" >Purple black</a></option>
+                    <option value="3"><a href="" >Red grey</a></option>
+                    <option value="4"><a href="" >Yellow blue</a></option>
+                </select>
+            
+                
+                </nav>
+            <div class="container-info" id="containerinfo">
+                <h1>Formacion</h1>
+                 <div class="informacion">
+                        <div class="acordeon">Estudios realizados</div>
+                            <div class="panel" id="panel">
+                                <p>Universidad central del Ecuador</p> 
+                                <p>Cantera I Sofka U 2022</p>
+                                <p>Cantera II Sofka U 2022</p>
+                                <p>Sofka U Training league 2022</p> 
+                            </div>
+                        <div class="acordeon">Cursos realizados</div>
+                            <div class="panel" id="panel2">
+                                <p>Udemy curso de programacion web</p>
+                                <p>Platzi curso de programacion web</p>
+                            </div>
+                 </div>
+            </div>
+            </section>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

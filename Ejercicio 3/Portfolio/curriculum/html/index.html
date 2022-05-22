@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <title>Hoja de vida Ricardo Fuentes</title>
+    </head>
+    <body id="body">
+        <section class="principal">
+
+            <nav class="container-nav" id="containernav">
+                
+                <div class="margen-imagen">
+                    <img src="../imagenes/perfil.jpg" width="100px" height="100px" alt="" class="imagen">
+                </div>
+                <div class="margen-botones">
+                    <button><a href="../html/index.html" class="boton" >Inicio</a></button>
+                    <button><a href="../html/index2.html" class="boton">Experiencia</a></button>
+                    <button><a href="../html/index3.html" class="boton">Referencias Personales</a></button>
+                    <button><a href="../html/index5.html" class="boton">Referencias Familiares</a></button>
+                    <button><a href="../html/index4.html" class="boton">Estudios</a></button>
+                </div>  
+                    <label for="">Colores</label>
+                    <select onchange=cambiarColores(this) class="selectColor" id="selectColor">
+                        <div class="container-opciones">
+                            <option value="1" ><a href="" >Predeterminado</a></option>
+                            <option value="2" ><a href="" >Purple black</a></option>
+                            <option value="3"><a href="" >Red grey</a></option>
+                            <option value="4"><a href="" >Yellow blue</a></option>
+                        </div>
+                    </select>
+            
+            </nav>
+
+            <div class="container-info" id="containerinfo">
+                <div class="informacion">
+                    <div class="informacionprincipal">
+                        <h1>RICARDO FUENTES</h1>
+                        <h2>FUTURE WEB DEVELOPER</h2>
+                        <h3>Informacion principal</h3>
+                        <p>Quito, ecuador / Chile "Proximamente"</P>  <P>(+593 992777865)</P> <p>rjose.fmarin99@gmail.com</p>
+                        <div class="logos">
+                            <div><a href="https://www.instagram.com/rjfuentes99/?hl=es-la" target="_blank"><img src="../imagenes/instagram.png" alt=""></a></div>
+                            <div><a href="https://www.linkedin.com/in/ricardo-fuentes-801032208/" target="_blank"><img src="../imagenes/link.png" alt=""></a></div>
+                            <div><a href="https://github.com/rjfuentes99" target="_blank"><img src="../imagenes/github.png" alt=""></a></div>
+                        </div>
+                        <button class="boton-curriculum"><a href="../archivos/Curriculum Ricardo Fuentes.pdf" download="Curriculum Ricardo Fuentes">Curriculum</a></button>
+                    </div>
+                </div>
+                <div class="container-imagen">
+                    <img src="../imagenes/perfil.jpg" width="250px"height="250px" class="imagenprincipal">
+                </div>
+            </div>
+
+        </section>
+       <script src="../js/index.js"></script>
+    </body>
+</html>

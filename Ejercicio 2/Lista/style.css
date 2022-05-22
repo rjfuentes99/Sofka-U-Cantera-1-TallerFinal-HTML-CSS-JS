@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(34, 33, 33);
+    margin: 0;
+}
+header{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+}
+.titulo{
+    color: blanchedalmond;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    
+}
+.container-button{
+    margin: auto;
+}
+button{
+    border: none;
+    margin: 6px;
+    width: 70px;
+    height: 40px;
+    font-weight: 800;
+    background-color: wheat;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+}
+input:hover{
+    background-color: antiquewhite;
+    color: aliceblue;
+
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+    }
+    .selectColor{
+        width: 200px;
+        height: 60px;
+    }
+}
+
+.container-frutas{
+    background-color: white;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    border: 3px grey solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.48);
+
+}
+
+.container-frutas li{
+    border: 2px solid grey;
+    border-radius: 15px;
+    list-style: none;
+    width: 95px;
+    height: 95px;
+    margin: 6px;
+    padding: 10px;
+    background-color: white;
+}

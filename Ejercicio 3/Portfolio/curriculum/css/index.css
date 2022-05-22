@@ -1,0 +1,242 @@
+html{
+    background-color: rgb(34, 33, 33);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.principal{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+/*menu de navegacion*/
+.container-nav{
+    border: 2.5px solid rgb(192, 192, 192);
+    width: 20%;
+    border-radius: 10PX;
+    display: grid;
+    background: hsl(227, 10%, 10%);
+    font: 200 1em 'Fira Sans', sans-serif;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+}
+.margen-imagen{
+    position: relative;
+    top: 5px;
+    width: 120px;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+.imagen{
+    border-radius: 50%;
+    border: #ffffff solid 4px;
+}
+.margen-botones{
+    position: relative;
+    top: -115px;
+    
+}
+button {
+    border-radius: 15px;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 170px;
+    margin: 0.9em;
+    padding: 1.6em 2.3em;
+    background-color: transparent;
+}
+button:hover{
+    animation: efecto_pulse 700ms ease;
+}
+button:active{
+    animation: efecto_pulse 700ms ease;
+    background-color: #345B63;
+    transition: 0.5s;
+}
+.boton{
+    color: white;
+    text-decoration: none;
+    width: 170px;
+    height: 170px;
+}
+@keyframes efecto_pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgb(71, 71, 71);
+    }
+    100%{
+        box-shadow: 0 0 8px 16px transparent;
+    }
+}
+.selectColor{
+    position: relative;
+    bottom: 70px;
+    border: black solid 2px;
+    margin: auto;
+    color: white;
+    border-radius: 15px;
+    background-color: hsl(227, 10%, 10%);
+    height: 40px;
+    width: 80%;
+}
+
+select{
+    -webkit-appearance: none;
+    text-align: center;
+    font-size: 16px;
+}
+label{
+    position: relative;
+    bottom: 80px;
+    left: 30px;
+    color: white;
+}
+
+/* Informacion*/
+.container-info{
+    border: 2.5px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    background-color: #1C2B2D;
+    display: grid;
+    display: flex;
+    min-width: 80%;
+    align-content: center;
+}
+.container-imagen{
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+.imagenprincipal{
+    position: relative;
+    left: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    align-content: center;
+    border: 10px solid white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
+}
+.informacionprincipal{
+    position: relative;
+    left: 60px;
+    bottom: 60px;
+}
+.informacion{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+.container-info h1{
+    padding-left: 30px;
+    width: 20%;
+    text-align: justify;
+    font-size: 50px;
+    color: white;
+}
+.informacion h2{
+    text-align: justify;
+    color: #345B63;
+}
+.informacion p, h3{
+    text-align: justify;
+    color: #D4ECDD;
+}
+.informacion b{
+    color: #E6D5B8;
+}
+.logos{
+
+    width: 300px;
+    height: 70px;
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-left: -10px;
+}
+.logos img{
+  
+    display: grid;
+    width: 30px;
+    
+}
+.logos div{
+
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    background-color: #99A8B2;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+.logos div:hover{
+    background-color: #E6D5B8;
+    transition: 0.6s;
+}
+/*Acordeon CSS*/
+.acordeon{
+    position: relative;
+    right: 170px;
+    border-radius: 15px;
+    background-color: rgb(46, 46, 46);
+    color: black;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 400px;
+    height: 60px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    margin: 3px;
+    font-size: 23px;
+    color: white;
+    
+}
+.active, .acordeon:hover{
+    background-color: rgb(46, 46, 46);
+    
+}
+.panel{
+    position: relative;
+    right: 170px;
+    border-radius: 15px;
+    padding: 0px 20px;
+    width: 100%;
+    display: none;
+    background-color: #345B63;
+    overflow: hidden;
+    
+}
+.panel p{
+    font-size: 14px;
+}
+.boton-curriculum{
+    text-decoration: none;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+    top: 20px;
+    border-radius: 15px;
+    
+}
+.boton-curriculum a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: 7px;
+    right: 6px;
+}
